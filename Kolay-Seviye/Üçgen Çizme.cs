@@ -1,4 +1,5 @@
 ﻿// .Net Core 6.0
+// Made by Chyper
 // Verilen yüksekliğe göre üçgen çizen program
 
 Console.WriteLine("Yükseliği giriniz:");
