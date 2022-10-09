@@ -1,4 +1,5 @@
 // .Net Core 6.0 
+// Made by Chyper
 // Fibonacci dizisinde kullanıcıdan alınan derinliğe kadar olan sayıların aritmetik ortalamasını verene program
 
 Console.WriteLine("Fibonacci dizisinin derinliğini giriniz: "); // Derinliğin kullanıcıdan alınması
