@@ -4,7 +4,7 @@
 
 ### www.patika.dev
 
-Bu repoda başlangıç seviyesi patika.dev sitesindeki .net core eğitimin patikasının sonundaki kolay orta ve zor seviyedeki C# projeleri yer almaktadır
+Bu repoda patika.dev sitesindeki başlangıç seviyesi .net core eğitimin patikasının sonundaki kolay orta ve zor seviyedeki C# projeleri yer almaktadır
 
 Projelerde .Net Core 6.0 sürümü kullanılmıştır 
 
