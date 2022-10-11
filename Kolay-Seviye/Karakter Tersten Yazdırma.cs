@@ -1,6 +1,6 @@
 ﻿// .Net Core 6.0
 // Made by Chyper
-// Verilen string ifade içerisindeki karakterleri bir önceki karakter ile yer değiştiren console uygulama
+// Verilen string ifade içerisindeki karakterleri bir önceki karakter ile yer değiştiren console uygulaması
 // Örnek: Input: Merhaba Hello Question
 // Output: erhabaM elloH uestionQ
 
