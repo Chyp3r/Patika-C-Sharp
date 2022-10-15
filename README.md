@@ -26,4 +26,3 @@ Projelerde .Net Core 6.0 sürümü kullanılmıştır
 - ATM Uygulaması
 - Barcode Generator/Reader
 - Voting Uygulaması
-
