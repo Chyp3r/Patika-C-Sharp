@@ -4,6 +4,7 @@
 
 kategori[] kategoris = isimlendir();
 
+// Kullanıcıların oluşturulması DB bağlantısı ilede yapılabilir
 List<user> users = new List<user>();
 user ali = new user();
 user veli = new user();
@@ -23,7 +24,7 @@ veli.oy=2;
 ahmet.oy=3;
 
 
-
+// Yeni giriş yapan kullanıcını giriş yapacağı kısım
 void yenigiris()
 {
     Console.Clear();
@@ -33,6 +34,8 @@ void yenigiris()
     string username= Console.ReadLine();
     Console.WriteLine("Şifrenizi giriniz");
     string password= Console.ReadLine();
+
+    // foreach ile users listesi üzerinden gelen itemlar arasından username ve password bilgisi uyuşan olup olmadığı kontrol ediliyor
     foreach (var item in users)
     {
         if (item.username == username && item.password == password)
@@ -43,6 +46,7 @@ void yenigiris()
             break;
         }
     }
+    // Eğer hiçbir giriş bilgisine uymayan bir bilgi verildiyse bu blok çalışır
     if (statue == false)
     {
         Console.WriteLine("Hatalı kullanıcı adı veya şifre");
@@ -50,6 +54,7 @@ void yenigiris()
     }
 }
 
+// Üyelik işleminin yapıldığı fonksiyon
 void uyeol()
 {
     Console.Clear();
@@ -61,11 +66,13 @@ void uyeol()
     yenigiris();
 }
 
+// Oyların alınıp sayıldığı fonksiyon
 void oylama(user item)
 {
     Console.Clear();
     hata:
     Console.WriteLine("1)Bilgisayar Oyunları\n2)Playstation oyunları\n3)Xbox Oyunları\n4)Mobil Oyunlar\nOyunuzu veriniz:");
+    // Try catch ile hatalı veri alınması engelleniyor
     try
     {
         int oy = Convert.ToInt32(Console.ReadLine());
@@ -84,6 +91,8 @@ void oylama(user item)
         Console.WriteLine("Hatalı giriş");
         goto hata;
     }
+
+    // Oyların sayım işlemi
     foreach (var a in users)
     {
         switch (a.oy)
@@ -91,25 +100,25 @@ void oylama(user item)
             case 1:
             {
                 kategoris[0].oysayisi++;
-                Console.WriteLine("{0} PC YE OY VERDİ",a.username);
+                Console.WriteLine("{0} Bilgisayara oy verdi",a.username);
                 break;
             }
             case 2:
             {
                 kategoris[1].oysayisi++;
-                Console.WriteLine("{0} PS YE OY VERDİ",a.username);
+                Console.WriteLine("{0} Playstaiona oy verdi",a.username);
                 break;
             }
             case 3:
             {
                 kategoris[2].oysayisi++;
-                Console.WriteLine("{0} XBOX YE OY VERDİ",a.username);
+                Console.WriteLine("{0} Xboxa oy verdi",a.username);
                 break;
             }
             case 4:
             {
                 kategoris[3].oysayisi++;
-                Console.WriteLine("{0} MOBİL YE OY VERDİ",a.username);
+                Console.WriteLine("{0} Mobile oy verdi",a.username);
                 break;
             }
         }
@@ -118,6 +127,7 @@ void oylama(user item)
     sonuclarigoster();
 }
 
+// Oyların sonuçlarını gösteren fonksiyon
 void sonuclarigoster()
 {
     Console.Clear();
@@ -128,6 +138,7 @@ void sonuclarigoster()
     }
 }
 
+// Ana menu fonksiyonu
 void menu()
 {
     int giris;
@@ -159,6 +170,7 @@ void menu()
 
 }
 
+// Kategori tanımlamalarının yapıldığı fonksiyon
 kategori[] isimlendir()
 {
     kategori pc = new kategori();
