@@ -1,0 +1,4 @@
+Örnek logfile dosyası
+Saat = 18:58:45 Hatalı Giriş  Denenen hesap numarası = 654321 Denenen şifre = @5!
+Saat = 18:58:47 Hatalı Giriş  Denenen hesap numarası = 654321 Denenen şifre = @5!
+Saat = 18:58:51 Giriş Yapıldı  Hesap numarası = 123456 Şifre = 1234
